@@ -27,13 +27,13 @@ AutoSuggest has been tested (and works) in: IE7 & IE8, Firefox, Safari, Opera, a
 
 ## How To Use It
 
-Obviously you need to make sure you have the latest jQuery library (at least 1.3) already loaded in your page. After that it's really simple, just add the following code to your page (make sure to wrap your code in jQuery's ready function): 
+Obviously you need to make sure you have the latest jQuery library (at least 1.3) already loaded in your page. After that it's really simple, just add the following code to your page (make sure to wrap your code in jQuery's ready function):
 
     $(function(){
         $("input[type=text]").autoSuggest(data);
     });
 
-The above line of code will apply AutoSuggest to all text type `input` elements on the page. Each one will be using the same set of Data. If you want to have multiple AutoSuggest fields on your page that use different sets of Data, make sure you select them separately. Like this: 
+The above line of code will apply AutoSuggest to all text type `input` elements on the page. Each one will be using the same set of Data. If you want to have multiple AutoSuggest fields on your page that use different sets of Data, make sure you select them separately. Like this:
 
     $(function(){
         $("div.someClass input").autoSuggest(data);
@@ -157,7 +157,7 @@ The function will be passed two arguments:
 
 * **resultsComplete**: *callback function* - Custom function that is run when the suggestion results dropdown list is made visible. Will run after every search query.
 
-The **formatList** option will hand you 2 objects: 
+The **formatList** option will hand you 2 objects:
 
 * **data**: This is the data you originally passed into AutoSuggest (or retrieved via an AJAX request)
 * **elem**: This is the HTML element you will be formatting (the 'result' `li` item).
@@ -170,7 +170,7 @@ In order to add extra things to the 'result' item (like an image) you will need 
         return new_elem;
     }
 
-You MUST return the HTML object. **formatList** will run on each 'result' item. 
+You MUST return the HTML object. **formatList** will run on each 'result' item.
 
 ## License
 
@@ -182,6 +182,6 @@ Originally developed by [Drew Wilson](http://drewwilson.com/)
 
 ### Contributors
 
-* [Wu Yuntao](http://github.com/wuyuntao)
+* [Avtandil Kikabidze](http://github.com/akalongman)
 * [Fred Wu](http://github.com/fredwu)
 * [Jeremy Mikola](http://github.com/jmikola)
